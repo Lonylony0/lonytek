@@ -1,0 +1,422 @@
+*
+{
+    font-family: 'poppins';
+}
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins';
+}
+.contenair
+{
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 80vh;
+    animation: animate 16s ease infinite;
+    background-size: cover;
+    border-bottom-left-radius: 200px;
+   
+
+}
+.outer
+{
+    /* position: absolute; */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 80vh;
+    background: rgba(0, 0, 0, 0.5);
+    border-bottom-left-radius:200px;
+     
+}
+.details
+{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: aliceblue;
+
+}
+@keyframes animate
+{
+    0%,100%{
+        background-image: url(images/www.jpg);
+    }
+    25%{
+        background-image: url(images/20240502_211236.png);
+    }
+    50%{
+        background-image: url(images/back.jpg);
+    }
+    75%{
+        background-image: url(images/photop.jpg);
+    }
+   
+}
+
+
+.logo
+{
+    width: 160px;
+    top: 4%;
+    border-radius: 10px;
+    z-index: 1;
+    margin-right: 15px;
+}
+.algn
+{
+    float: right;
+    margin-right: 30px;
+    
+}
+
+
+/* section du titre */
+.conseil
+{
+   
+    background: linear-gradient(rgba(0,0,0,0.1),#2a7fb1);
+    padding: 70px 0 20px 5px;
+    position: relative; 
+    top: 10px;
+    height: 400vh;
+    top: -50px;
+    
+
+}
+
+.title-text
+{
+ text-align: center;
+ padding-bottom: 70px;
+}
+section .title-text .tree{
+    margin: auto;
+    font-size: 30px;
+    color: #009688 ;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+}
+section .title-text .tree::after
+{
+    content: '';
+    width: 50px;
+    height: 35px;
+    background: linear-gradient(#019587,#fff);
+    position: absolute;
+    top: -20px;
+    left: 0;
+    z-index: -1;
+    transform: rotate(10deg);
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    
+
+
+}
+.title-text h1
+{
+    font-size: 50px;
+}
+.letexte
+{
+   padding: 30px;
+   margin: 10px;
+   
+}
+.letexte .dd
+{
+    margin-right : 7cm ;
+    margin-left :7cm ;
+    font-size: 20px;
+
+}
+.letexte img
+{
+    width: 50%;
+    height: 40vh;
+    border-radius: 10px;
+}
+@media screen and (max-width:770px)
+{
+    .conseil
+    {
+        height: 300vh;
+    }
+    .letexte img
+{
+    width: 100%;
+    height: 30vh;
+    border-radius: 10px;
+
+}
+.letexte .dd
+{
+    margin-right : 0 ;
+    margin-left :0 ;
+    font-size: 20px;
+
+}
+.conseil
+{
+   
+   
+    height: 500vh;
+    top: -50px;
+    
+
+}
+}
+
+/* social link */
+.social-links
+{
+  text-align: center;
+}
+.social-links .fa
+{
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    line-height: 40px;
+    border: 1px solid #051110;
+    margin: 40px 5px 0;
+    color: #0984a3;
+    cursor: pointer;
+    transition: 1s;
+}
+.social-links .fa:hover
+{
+    background: #009688;
+    color: rgb(245, 240, 240);
+    transform: translateY(-7px);
+}
+.social-links p
+{
+    font-size: 20px;
+    margin-top: 20px;
+}
+@media screen and (max-width:770px)
+{
+    .footer-left,.footer-right
+    {
+        flex-basis: 100%;
+        font-size: 14px;
+    }
+    .footer-img
+    {
+        top: 25%;
+    }
+}
+
+
+/* section du navbar */
+
+
+.main_box .sidebar_menu
+{
+    
+    position: fixed;
+    height: 100vh;
+    width: 280px;
+    left: -280px;
+    /* background:rgba(225,255,255, 0.1); */
+    background: #019587;
+    box-shadow: 0 0 6px rgba(225,255,255, 0.5); 
+    z-index: 2;
+}  
+    
+.sidebar_menu .logo
+{
+    position:absolute;
+    width: 100%;
+    height: 60px;
+    box-shadow: 0 0 6px rgba(225,255,255, 0.5);
+    
+}
+.sidebar_menu .logo a{
+    color: #fff;
+    font-size: 25px;
+    font-weight: 500;
+    position: absolute;
+    left: 50px;
+    line-height: 60px;
+    text-decoration: none;
+}
+.sidebar_menu .menu
+{
+    position: absolute;
+    top: 80px;
+    width: 100%;
+}
+.sidebar_menu .menu li
+{
+    margin-top: 6px;
+    padding: 14px 20px;
+    transition: all 0.3s linear;
+    text-decoration: none;
+    list-style-type: none;
+   
+}
+.sidebar_menu .menu i
+{
+ color: #fff;
+ font-size: 20px;
+ padding-right: 8px;
+}
+.sidebar_menu .menu a
+{
+    /* color: #fff; */
+    color: #051110;
+    font-size: 20px;
+    text-decoration: none;
+}
+.sidebar_menu .menu li:hover
+{
+    border-left: 1px solid #fff;
+    box-shadow:0 0 4px  rgba(225,255,255, 0.5) ;
+}
+.sidebar_menu .social_media
+{   
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX( -50%);
+    cursor: pointer;
+}
+
+.menu li:hover>ul {
+
+    display: block;
+    color: #280097;
+    text-decoration: none;
+    list-style-type: none;
+    
+    
+    }
+    .tableau
+    {
+       
+        border-bottom: solid 2px;
+        font-weight: bolder;
+        font-family:'';
+        list-style-type: none;
+    
+    }
+.menu li ul
+    {
+    
+       display:none;
+       
+    
+    }
+    .sidebar_menu .menu ul li ul li{ 
+        text-decoration: none;
+        list-style-type: none;
+     
+     }
+
+.social_media i
+{
+padding: 0 5px;
+color: #fff;
+opacity: 0.6;
+font-size: 20px;
+transition: all 0.3s linear;
+}
+.social_media i:hover
+{
+    opacity: 1;
+}
+
+#check
+{
+    display: none;
+}
+.main_box .btn_one .i
+{
+    
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    position: absolute;
+    left: 16px;
+    line-height: 60px;
+    cursor: pointer;
+    opacity: 1;
+    transition: all 0.3s linear;
+    z-index: 1;
+    border-radius: 100px;
+    margin-top: 15px;
+    
+    
+    
+}
+.sidebar_menu .btn_one .i
+{
+    font-size: 25px;
+    line-height: 60px;
+    /* position: absolute; */
+    left: 240px;
+    opacity: 0;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    position: fixed;
+
+
+}
+
+.sidebar_menu .btn_two .i
+{
+    font-size: 25px;
+    line-height: 60px;
+     position: absolute; 
+    left: 220px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    opacity: 0;
+    top:50px ;
+    z-index: 2;
+    border-radius: 50px;
+    padding-top: -15px;
+    margin-top: -15px;
+    position: fixed;
+
+    
+
+}
+.btn_one .i:hover
+{
+    font-size: 29px;
+}
+.btn_one .i:hover
+{
+    font-size: 24px;
+}
+#check:checked ~ .sidebar_menu
+{
+    left: 0px;
+    transition: 2s
+}
+
+#check:checked ~ .btn_one .i
+{
+    opacity: 0;
+    
+    
+    
+}
+
+#check:checked ~ .sidebar_menu .btn_two .i
+{
+    opacity: 1;
+    transition: 2s
+    
+    
+}

@@ -1,0 +1,351 @@
+
+
+html{
+    scroll-behavior: smooth;
+}
+*{
+    font-family: poppins;
+}
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: poppins;
+    background: linear-gradient(90deg,#e2a9e5 15%,#2b94e5 100%);
+}
+#blog
+{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+    border-bottom: 1px solid rgba(rgb(5, 4, 4));
+}
+.blog-heading
+{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+.blog-heading span{
+    color: red;
+}
+.blog-heading h3{
+    font-size: 2.4rem;
+    color: #000;
+    font-weight: 600;
+}
+.blog-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+    flex-wrap: wrap;
+}
+.blog-box
+{
+    width: 350px;
+    background-color: #ffffffff;
+    border: 1px solid #ececec;
+    margin: 20px;
+}
+.blog-img
+{
+    width: 100%;
+    height: 5cm;
+}
+.blog-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.blog-text
+{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.blog-text span{
+   color: red;
+   font-size: 0.9rem;
+
+}
+.blog-text .blog-title
+{
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #000;
+}
+.blog-text .blog-title:hover
+{
+    color: #f33c3c;
+    transition: all ease 0.3s ;
+}
+.blog-text p{
+    color: #9b9b9b;
+    font-size: 0.9rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow:ellipsis ;
+    margin: 20px 0px;
+}
+.blog-text a
+{
+    color: black;
+    
+}
+.blog-text .rad
+{
+    border: 2px solid black;
+    border-radius: 10px;
+    border-right-width: 40px;
+    padding-left: 3px;
+    
+}
+.blog-text a:hover
+{
+    color: #f33c3c;
+    transition: all ease 0.3s ;
+   
+}
+
+
+a{
+    text-decoration: none;
+}
+ul
+{
+    list-style: none;
+}
+
+.imag
+{
+    border-radius: 10px;
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+    border-bottom: 5px solid #6f6f6f;
+    
+}
+nav h1
+{
+    color: #717171;
+    font-family: 'playfair display,sans-serif';
+    font-size:30px;
+
+}
+nav .onglets
+{
+margin-top: 3px;
+margin-left: 300px;
+}
+nav .onglets a{
+text-decoration: none;
+color: #000;
+margin-right: 10px;
+border-bottom: 1px solid #000;
+padding-bottom: 5px;
+}
+
+@media screen and (max-width:600px)
+{
+    nav .onglets
+    {
+        margin-left: 0px;
+        margin-bottom: 20px;
+    
+    }
+    footer
+{
+   padding: 30px; 
+}
+}
+@media(max-width:1250px)
+{
+  .blog-box
+  {
+    width: 300px;
+  }
+}
+
+@media(max-width:1100px)
+{
+  .blog-box
+  {
+    width: 70% ;
+  }  
+}
+
+@media(max-width:550px)
+{
+  .blog-box
+  {
+    margin: 20px 10px;
+    width: 100%;
+  }
+  #blog
+  {
+    padding: 20px;
+  }
+}
+
+/* debut du writter */
+/*  
+.container
+{
+    display:flex;
+    flex-wrap: wrap;
+}
+.text
+{
+    font-size: 5em;
+    font-family: monospace;
+    border-right: 5px solid;
+
+     width: 100%; 
+     white-space: nowrap; 
+     overflow: hidden; 
+    animation:
+    typing 5s steps(50), cursor .4s step-end infinite alternate;
+}
+
+@keyframes cursor
+{
+    50%{
+        border-color: transparent;
+    }
+}
+ 
+ @keyframes typing{
+    from {width: 0;
+
+   
+ }
+}  */
+/* fin du writter */
+
+/* debut du slider */
+
+/* #slider
+{
+    overflow: hidden;
+    height: 50vh;
+    
+   
+
+   
+  
+}
+#slider figure{
+    position: relative;
+    width: 500%;
+    
+    margin: 0;
+    left: 0;
+    animation: 20s slider infinite;
+    
+
+}
+#slider figure img{
+    float: left;
+    width: 20%;
+    
+    
+    
+}
+@keyframes slider
+{
+0%
+{
+    left: 0;
+}
+20%
+{
+}
+25%
+{
+    left: 0;
+}
+45%
+{
+    left: -100%;
+}
+50%
+{
+    left: -200%;
+}
+70%
+{
+    left: -200%;
+}
+75%
+{
+    left: -300%;
+}
+95%
+{
+    left: -300%;
+}
+} */
+
+/* fin du slider */
+
+/* footer */
+footer h1
+{
+    
+    border-bottom: 1px solid #fff;
+    width: 115px;
+    padding-bottom: 5px;
+}
+/* moi meme */
+h1 img{
+    border-radius: 15px;
+}
+footer .services
+{
+    margin-top: -10px;
+    display: flex;
+     flex-wrap: wrap; 
+}
+footer .services .service
+{
+    margin-right: 30px;
+    padding: 10px;
+
+}
+footer .services .service p 
+{
+    max-width: 300px;
+}
+footer #contact
+{
+   color: grey;
+}
+
+footer .pi
+{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+footer .pi .paie
+{
+    align-items: center;
+    display: inline-block;
+    margin-left: 10px;
+}
+footer{
+    background-color: #f1eeee;
+    padding: 15px;
+}
